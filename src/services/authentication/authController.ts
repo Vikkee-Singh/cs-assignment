@@ -35,8 +35,6 @@ export const login = async (req: Request, res: Response) => {
 
     res.status(200).send({ done: true, statusCode: 200, token });
   } catch (error) {
-    console.log("error==>", error);
-
     res.status(400).send({ done: false, statusCode: 400, error });
   }
 };
