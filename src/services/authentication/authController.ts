@@ -6,7 +6,6 @@ import config from "../../config";
 import { comparePassword } from "../../middleware/checks";
 
 export const login = async (req: Request, res: Response) => {
-  debugger;
   try {
     let db = await DbConnection.Get();
     let user = await db.query(
