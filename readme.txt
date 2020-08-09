@@ -14,19 +14,28 @@ yarn run dev
 
 
 API ===============>
-1) End Point (/api/v1/products/list) method: get
-
-2) End Point (/api/v1/login) method: post body: {
-	"email":"vikkeesingh@gmail.com",
-	"password":"PASS.vikkee@9090"
+1)End Point: /api/v1/signup
+method: post
+body: {
+	"name": "YOUR NAME",
+	"email":"YOUR EMAIL",
+	"password":"YOUR PASSWORD"
 }
 
-3) End Point: /api/v1/products/add
+2) End Point: /api/v1/products/list
+method: get
+
+3) End Point (/api/v1/login) method: post body: {
+	"email":"Email address",
+	"password":"Your Password"
+}
+
+4vikkeesingh@gmail.com) End Point: /api/v1/products/add
 method: post
 headers [x-access-token: token]
 body: {"name":"Nikon","description":"Digital camera","price":"20134.34", "make": "2020"}
 
-4) End Point (/api/v1/products/cart)
+5) End Point (/api/v1/products/cart)
 method: get
 headers [x-access-token: token]
 
